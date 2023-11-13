@@ -25,7 +25,23 @@ document.addEventListener('DOMContentLoaded', function () {
     const toggleNightModeButton = document.getElementById('toggleNightMode');
     const body = document.body;
 
+    // Function to set dark mode based on user preference
+    const setDarkMode = (isDarkMode) => {
+        body.classList.toggle('dark-mode', isDarkMode);
+    };
+
+    // Check if dark mode preference is stored in local storage
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+    // Apply dark mode based on stored preference
+    setDarkMode(isDarkMode);
+
     toggleNightModeButton.addEventListener('click', function () {
+        // Toggle dark mode class on body
         body.classList.toggle('dark-mode');
+
+        // Store the dark mode preference in local storage
+        const isDarkModeNow = body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isDarkModeNow);
     });
 });
