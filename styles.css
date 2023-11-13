@@ -19,7 +19,8 @@ body.dark-mode {
 }
 
 #toggleNightMode {
-    order: 2; /* Change the order to move the button to the right */
+    text-align: right;
+    margin-right: 15px; 
 }
 
 /*Header Style*/
