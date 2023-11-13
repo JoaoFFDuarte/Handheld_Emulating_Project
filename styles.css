@@ -28,6 +28,9 @@ header {
     color: white;
     text-align: center;
     padding: 1em;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
 }
 
 /*nav Style*/
