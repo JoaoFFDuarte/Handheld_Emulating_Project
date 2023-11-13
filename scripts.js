@@ -3,7 +3,6 @@ const template = document.createElement("template");
 template.innerHTML = `
     <header>
         <h1>Handheld Emulating Digital Console</h1>
-        <button id="toggleNightMode">Toggle Night Mode</button>
     </header>
 
     <nav>
@@ -15,6 +14,7 @@ template.innerHTML = `
             <li><a href="about.html" target="_self">About</a></li>
             <li><a href="contacts.html" target="_self">Contact</a></li>
         </ul>
+        <button id="toggleNightMode">Toggle Night Mode</button>
     </nav>
 `;
 
