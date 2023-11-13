@@ -13,10 +13,10 @@ template.innerHTML = `
             <li><a href="product.html" target="_self">Product</a></li>
             <li><a href="about.html" target="_self">About</a></li>
             <li><a href="contacts.html" target="_self">Contact</a></li>
+    
+            <button id="toggleNightMode">Toggle Night Mode</button>
         </ul>
     </nav>
-    
-    <button id="toggleNightMode">Toggle Night Mode</button>
 `;
 
 document.body.insertBefore(template.content, document.body.firstChild);
