@@ -14,8 +14,10 @@ template.innerHTML = `
             <li><a href="about.html" target="_self">About</a></li>
             <li><a href="contacts.html" target="_self">Contact</a></li>
         </ul>
-        <button id="toggleNightMode">Toggle Night Mode</button>
     </nav>
+
+    
+    <button id="toggleNightMode">Toggle Night Mode</button>
 `;
 
 document.body.insertBefore(template.content, document.body.firstChild);
