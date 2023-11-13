@@ -1,3 +1,6 @@
+/*---------------------------------------------------------------------------
+---------------------------Template for all pages----------------------------
+---------------------------------------------------------------------------*/
 const template = document.createElement("template");
 
 template.innerHTML = `
@@ -7,12 +10,12 @@ template.innerHTML = `
 
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="changelog.html" target="_self">Changelog</a></li>
-            <li><a href="planning.html" target="_self">Planning</a></li>
-            <li><a href="product.html" target="_self">Product</a></li>
-            <li><a href="about.html" target="_self">About</a></li>
-            <li><a href="contacts.html" target="_self">Contact</a></li>
+            <li><a href="index.html" target="_self" id=index>Home</a></li>
+            <li><a href="changelog.html" target="_self" id=changelog>Changelog</a></li>
+            <li><a href="planning.html" target="_self" id=planning>Planning</a></li>
+            <li><a href="product.html" target="_self" id=product>Product</a></li>
+            <li><a href="about.html" target="_self" id=about>About</a></li>
+            <li><a href="contacts.html" target="_self" id=contacts>Contact</a></li>
     
             <button id="toggleNightMode">Toggle Night Mode</button>
         </ul>
@@ -22,6 +25,10 @@ template.innerHTML = `
 document.body.insertBefore(template.content, document.body.firstChild);
 
 
+
+/*---------------------------------------------------------------------------
+--------------------------Night Mode Functionality---------------------------
+---------------------------------------------------------------------------*/
 document.addEventListener('DOMContentLoaded', function () {
     const toggleNightModeButton = document.getElementById('toggleNightMode');
     const body = document.body;
@@ -46,3 +53,23 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.setItem('darkMode', isDarkModeNow);
     });
 });
+
+/*---------------------------------------------------------------------------
+----------------------Current page button functionality----------------------
+---------------------------------------------------------------------------*/
+// Get the current page's filename
+var currentPage = window.location.pathname.split('/').pop();
+
+// Remove the ".html" extension
+currentPage = currentPage.replace('.html', '');
+
+// Find the corresponding navigation link and add the 'active' class
+var navLinks = document.getElementsByTagName('a');
+for (var i = 0; i < navLinks.length; i++) {
+    var link = navLinks[i];
+    var linkPage = link.href.split('/').pop().replace('.html', '');
+
+    if (currentPage === linkPage) {
+        link.classList.add('active');
+    }
+}
