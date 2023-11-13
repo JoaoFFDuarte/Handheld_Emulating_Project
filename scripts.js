@@ -15,7 +15,6 @@ template.innerHTML = `
             <li><a href="contacts.html" target="_self">Contact</a></li>
         </ul>
     </nav>
-
     
     <button id="toggleNightMode">Toggle Night Mode</button>
 `;

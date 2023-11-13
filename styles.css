@@ -41,11 +41,13 @@ nav ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    display: flex;
 }
 
 /*nav li Style*/
 nav li {
     float: left;
+    margin-right: 15px;
 }
 
 /*nav a Style*/
