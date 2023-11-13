@@ -18,6 +18,10 @@ body.dark-mode {
     color: #fff;
 }
 
+#toggleNightMode {
+    order: 2; /* Change the order to move the button to the right */
+}
+
 /*Header Style*/
 header {
     background-color: #333;
