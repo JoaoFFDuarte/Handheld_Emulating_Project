@@ -1,4 +1,4 @@
-const template = document.getElementById("startup");
+const template = document.createElement("template");
 
 template.innerHTML = `
     <header>
@@ -16,4 +16,4 @@ template.innerHTML = `
     </nav>
 `;
 
-document.body.appendChild(template.content);
+document.body.insertBefore(template.content, document.body.firstChild);
