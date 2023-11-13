@@ -69,3 +69,14 @@ nav a:hover {
 main {
     padding: 20px;
 }
+
+/* List Margin */
+ul.custom-list {
+    list-style-type: square;
+    margin-bottom: 5px;
+}
+
+
+
+
+
