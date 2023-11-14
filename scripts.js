@@ -93,7 +93,7 @@ xhr.responseType = 'text';
 xhr.onload = function () {
     if (xhr.status === 200) {
         // Display the file contents in the 'fileContents' element
-        document.getElementById('fileContents').textContent = xhr.responseText;
+        document.getElementById('fileContents').innerHTML = xhr.responseText.replace(/\n/g, '<p>');;
     } else {
         console.error('Failed to load the file.');
     }
