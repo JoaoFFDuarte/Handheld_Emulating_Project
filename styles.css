@@ -91,3 +91,10 @@ ul.custom-list {
     list-style-type: square;
     margin-bottom: 5px;
 }
+
+/* Image Center */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
