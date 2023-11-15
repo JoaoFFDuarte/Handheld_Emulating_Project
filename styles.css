@@ -1,3 +1,9 @@
+/*Image Styling*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /*Header Style*/
 header {
     background-color: #333;
