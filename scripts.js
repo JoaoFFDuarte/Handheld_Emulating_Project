@@ -5,22 +5,23 @@ const template = document.createElement("template");
 
 template.innerHTML = `
     <header>
-        <h1>Handheld Emulating Digital Console</h1>
+            <h1>Handheld Emulating Digital Console</h1>
     </header>
 
-    <nav>
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+
+    <div class="popup-menu" id="myMenu">
+        <h2>Menu</h2>
         <ul>
-            <li class="col-1 col-s-3"><a href="index.html" target="_self" id=index>Home</a></li><br>
-            <li class="col-1 col-s-3"><a href="changelog.html" target="_self" id=changelog>Changelog</a></li><br>
-            <li class="col-1 col-s-3"><a href="planning.html" target="_self" id=planning>Planning</a></li><br>
-            <li class="col-1 col-s-3"><a href="product.html" target="_self" id=product>Product</a></li><br>
-            <li class="col-1 col-s-3"><a href="about.html" target="_self" id=about>About</a></li><br>
-            <li class="col-1 col-s-3"><a href="contacts.html" target="_self" id=contacts>Contact</a></li><br>
-    
-            <button id="toggleNightMode">Toggle Night Mode</button>
+            <li><a href="index.html" target="_self" id=index>Index</a></li>
+            <li><a href="changelog.html" target="_self" id=changelog>Changelog</a></li>
+            <li><a href="planning.html" target="_self" id=planning>Planning</a></li>
+            <li><a href="product.html" target="_self" id=product>Product</a></li>
+            <li><a href="about.html" target="_self" id=about>About</a></li>
+            <li><a href="contacts.html" target="_self" id=contacts>Contact</a></li>
         </ul>
-    </nav>
-`;
+    </div>`
+;
 
 document.body.insertBefore(template.content, document.body.firstChild);
 
@@ -54,6 +55,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+
+/* *******FEATURE CURRENTLY INACTIVE******* */
 /*---------------------------------------------------------------------------
 ----------------------Current page button functionality----------------------
 ---------------------------------------------------------------------------*/
@@ -73,6 +76,8 @@ for (var i = 0; i < navLinks.length; i++) {
         link.classList.add('active');
     }
 }
+
+
 
 /*---------------------------------------------------------------------------
 -------------------------Changelog file functionality------------------------
@@ -101,3 +106,14 @@ xhr.onload = function () {
 
 // Send the request
 xhr.send();
+
+
+
+/*---------------------------------------------------------------------------
+------------------------Toggle side-menu functionality-----------------------
+---------------------------------------------------------------------------*/
+function toggleMenu() {
+    var menu = document.getElementById('myMenu');
+    // Altering where the left is
+    menu.style.left = menu.style.left === '0px' ? '-215px' : '0px';
+}

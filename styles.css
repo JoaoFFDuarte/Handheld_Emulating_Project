@@ -1,5 +1,7 @@
 /*Styling for all*/
 * {
+    /* Margin added to acomodate menu */
+    margin-left: 30px;
     box-sizing: border-box;
 }
 
@@ -41,40 +43,77 @@ body.dark-mode {
     color: #fff;
 }
 
-/*nav Style*/
-nav {
-    background-color: #444;
+
+
+.menu-toggle {
+    margin-left: 0px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 2; /* Ensure the symbol is above the menu */
 }
 
-/*Navigation as a whole Style*/
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: auto;
-    display: flex;
-}
-
-/*Navigation line Style*/
-nav li {
-    float: left;
-    margin-right: 15px;
-}
-
-/*Navigation button Style*/
-nav a {
-    display: block;
-    color: white;
+.popup-menu h2 {
+    margin-left: 0px;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    padding: 12px;
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the h2 element within the menu */
+    overflow: visible; /* Hide any text that overflows the specified width */
 }
 
-/*Hovering and active navigation button Style*/
+/*WILL BE DIFFERENT FOR EACH TYPE OF SCREEN
+  MOBILE = 100%
+  TABLETS ~= 30%
+  PCS ~= 10%
+*/
+.popup-menu {
+    margin-left: 0px;
+    position: fixed;
+    top: 0;
+    left: -215px;
+    width: 300px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease-in-out;
+    z-index: 1; /* Ensure the menu is below the symbol */
+}
+
+.popup-menu ul {
+    margin-left: 0px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.popup-menu li {
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.popup-menu a {
+    margin-left: 0px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* *******FEATURE CURRENTLY INACTIVE*******
+Hovering and active navigation button Style
 nav a:hover, nav a.active {
     background-color: #ddd;
     color: black;
 }
+*/
 
 /*Toggle Night Mode button Style*/
 #toggleNightMode {
