@@ -56,9 +56,8 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-/* *******FEATURE CURRENTLY INACTIVE******* */
 /*---------------------------------------------------------------------------
-----------------------Current page button functionality----------------------
+----------------------Current page highlight functionality----------------------
 ---------------------------------------------------------------------------*/
 // Get the current page's filename
 var currentPage = window.location.pathname.split('/').pop();
@@ -66,10 +65,10 @@ var currentPage = window.location.pathname.split('/').pop();
 // Remove the ".html" extension
 currentPage = currentPage.replace('.html', '');
 
-// Find the corresponding navigation link and add the 'active' class
-var navLinks = document.getElementsByTagName('a');
-for (var i = 0; i < navLinks.length; i++) {
-    var link = navLinks[i];
+// Find the corresponding menu link and add the 'active' class
+var menuLinks = document.getElementsByTagName('a');
+for (var i = 0; i < menuLinks.length; i++) {
+    var link = menuLinks[i];
     var linkPage = link.href.split('/').pop().replace('.html', '');
 
     if (currentPage === linkPage) {

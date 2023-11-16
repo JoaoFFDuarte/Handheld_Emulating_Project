@@ -43,8 +43,7 @@ body.dark-mode {
     color: #fff;
 }
 
-
-
+/*Toggle button style*/
 .menu-toggle {
     margin-left: 0px;
     position: fixed;
@@ -60,6 +59,7 @@ body.dark-mode {
     z-index: 2; /* Ensure the symbol is above the menu */
 }
 
+/*Popup-side-menu style*/
 .popup-menu h2 {
     margin-left: 0px;
     text-align: center;
@@ -107,13 +107,13 @@ body.dark-mode {
     font-weight: bold;
 }
 
-/* *******FEATURE CURRENTLY INACTIVE*******
-Hovering and active navigation button Style
-nav a:hover, nav a.active {
-    background-color: #ddd;
-    color: black;
+/*Hovering and current page menu Style*/
+.popup-menu a:hover, .popup-menu a.active {
+    /*background-color: #b3b3b3; /* Set the background color for the highlighted text */
+    color: rgb(34, 199, 202); /* Set the text color for the highlighted text */
+    font-weight: bold;
 }
-*/
+
 
 /*Toggle Night Mode button Style*/
 #toggleNightMode {
