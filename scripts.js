@@ -4,8 +4,8 @@
 const template = document.createElement("template");
 
 template.innerHTML = `
-    <header>
-            <h1>Handheld Emulating Digital Console</h1>
+    <header class="initialHeader">
+        <h1>Handheld Emulating Digital Console</h1>
     </header>
 
     <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
@@ -113,8 +113,23 @@ xhr.send();
 /*---------------------------------------------------------------------------
 ------------------------Toggle side-menu functionality-----------------------
 ---------------------------------------------------------------------------*/
+// Toggle menu twice to get it in the right position
+toggleMenu();
+toggleMenu();
+
 function toggleMenu() {
+    // Access the menu element
     var menu = document.getElementById('myMenu');
+
+    // Access the root element to access CSS variables
+    var root = document.documentElement;
+
+    // Get the value of the --menu-box-width variable as a float
+    var width = parseFloat(getComputedStyle(root).getPropertyValue('--menu-box-width'));
+
+    if (width >= 500){
+        width -= 85;
+    }
     // Altering where the left is
-    menu.style.left = menu.style.left === '0px' ? '-215px' : '0px';
+    menu.style.left = menu.style.left === '0px' ? -width + 'px' : '0px';
 }
