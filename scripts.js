@@ -20,6 +20,8 @@ template.innerHTML = `
             <li><a href="about.html" target="_self" id=about>About</a></li>
             <li><a href="contacts.html" target="_self" id=contacts>Contact</a></li>
         </ul>
+        <br>
+        <button id="toggleNightMode">Toggle Night Mode</button>
     </div>`
 ;
 
