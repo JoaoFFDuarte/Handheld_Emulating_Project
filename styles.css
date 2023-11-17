@@ -1,3 +1,8 @@
+/*Global css variables*/
+:root {
+    --background-color-light: #fff;
+}
+
 /*Styling for all*/
 * {
     /* Margin added to acomodate menu */
@@ -30,7 +35,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: var(--background-color-light);
     color: #333;
 }
 
