@@ -1,0 +1,22 @@
+/*Header Style*/
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.initialHeader {
+    height: 100px;
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.25em;
+}

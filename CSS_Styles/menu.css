@@ -1,0 +1,70 @@
+/*Toggle button style*/
+.menu-toggle {
+    margin-left: 0px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 2; /* Ensure the symbol is above the menu */
+}
+
+/*Popup-side-menu style*/
+.popup-menu h2 {
+    margin-left: 0px;
+    text-align: center;
+    padding: 12px;
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the h2 element within the menu */
+    overflow: visible; /* Hide any text that overflows the specified width */
+}
+
+.popup-menu {
+    margin-left: 0px;
+    position: fixed;
+    top: 0;
+    width: var(--menu-box-width);
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease-in-out;
+    z-index: 1; /* Ensure the menu is below the symbol */
+}
+
+.popup-menu ul {
+    margin-left: 0px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.popup-menu li {
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+.popup-menu a {
+    margin-left: 0px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/*Hovering and current page menu Style*/
+.popup-menu a:hover, .popup-menu a.active {
+    /*background-color: #b3b3b3; /* Set the background color for the highlighted text */
+    color: rgb(34, 199, 202); /* Set the text color for the highlighted text */
+    font-weight: bold;
+}
+
+/*Toggle Night Mode button Style*/
+#toggleNightMode {
+    margin-left: auto;
+    margin-right: 15px; 
+}

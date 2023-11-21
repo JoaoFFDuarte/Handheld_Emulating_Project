@@ -1,0 +1,26 @@
+/*Global css variables*/
+:root {
+    /*Light colored styles*/
+    --background-body-color-light: #fff;
+    --text-body-color-light: #333;
+}
+
+
+/*Styling for all*/
+* {
+    box-sizing: border-box;
+}
+
+
+/*Image Styling*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Image Center */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

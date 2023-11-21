@@ -1,0 +1,14 @@
+/*Main Style*/
+main {
+    padding: 20px;
+}
+
+.tabbingLVL1{
+    margin-left: 40px;
+}
+
+/*List Margin*/
+ul.custom-list {
+    list-style-type: square;
+    margin-bottom: 5px;
+}
