@@ -16,6 +16,7 @@
     :root {
         --menu-box-width: 300px;
         --menu-img-height: 13px;
+        --emoji-margin: 10px;
     }
 
     /*Styling changes for everything*/
@@ -48,6 +49,7 @@
     :root {
         --menu-box-width: 400px;
         --menu-img-height: 16px;
+        --emoji-margin: 10px;
     }
 
     * {
@@ -79,6 +81,7 @@
     :root {
         --menu-box-width: 500px;
         --menu-img-height: 18px;
+        --emoji-margin: 10px;
     }
     
     * {
@@ -107,6 +110,7 @@
     :root {
         --menu-box-width: 600px;
         --menu-img-height: 24px;
+        --emoji-margin: 6px;
     }
 
     * {
@@ -136,6 +140,7 @@
     :root {
         --menu-box-width: 700px;
         --menu-img-height: 32px;
+        --emoji-margin: 0px;
     }
 
     * {
