@@ -15,6 +15,7 @@
     /*Global css variables*/
     :root {
         --menu-box-width: 300px;
+        --menu-img-height: 13px;
     }
 
     /*Styling changes for everything*/
@@ -46,6 +47,7 @@
     /*Global css variables*/
     :root {
         --menu-box-width: 400px;
+        --menu-img-height: 16px;
     }
 
     * {
@@ -76,6 +78,7 @@
     /*Global css variables*/
     :root {
         --menu-box-width: 500px;
+        --menu-img-height: 18px;
     }
     
     * {
@@ -103,6 +106,7 @@
     /*Global css variables*/
     :root {
         --menu-box-width: 600px;
+        --menu-img-height: 24px;
     }
 
     * {
@@ -131,6 +135,7 @@
     /*Global css variables*/
     :root {
         --menu-box-width: 700px;
+        --menu-img-height: 32px;
     }
 
     * {

@@ -15,15 +15,6 @@
 }
 
 /*Popup-side-menu style*/
-.popup-menu h2 {
-    margin-left: 0px;
-    text-align: center;
-    padding: 12px;
-    width: 80%; /* Adjust the width as needed */
-    margin: 0 auto; /* Center the h2 element within the menu */
-    overflow: visible; /* Hide any text that overflows the specified width */
-}
-
 .popup-menu {
     margin-left: 0px;
     position: fixed;
@@ -38,6 +29,15 @@
     z-index: 1; /* Ensure the menu is below the symbol */
 }
 
+.popup-menu h2 {
+    margin-left: 0px;
+    text-align: center;
+    padding: 12px;
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the h2 element within the menu */
+    overflow: visible; /* Hide any text that overflows the specified width */
+}
+
 .popup-menu ul {
     margin-left: 0px;
     list-style-type: none;
@@ -47,6 +47,7 @@
 .popup-menu li {
     margin-left: 0px;
     margin-bottom: 10px;
+    justify-content: space-between;
 }
 
 .popup-menu a {
@@ -67,4 +68,13 @@
 #toggleNightMode {
     margin-left: auto;
     margin-right: 15px; 
+}
+
+/*Images on the menu*/
+.popup-menu img{
+    height: var(--menu-img-height);
+    width: 45px;
+    display: block;
+    float: right;
+    border-radius: 5px;
 }
