@@ -8,7 +8,7 @@ template.innerHTML = `
         <h1>Handheld Emulating Digital Console</h1>
     </header>
 
-    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
     <div class="popup-menu" id="myMenu">
         <h2>Menu</h2>

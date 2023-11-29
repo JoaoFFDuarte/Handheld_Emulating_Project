@@ -1,5 +1,5 @@
 /************************************************/
-/**********Media Specific Style Changes**********/
+/*********Screen Specific Style Changes**********/
 /************************************************/
 
 /* Extra small devices like phones*/
@@ -26,7 +26,7 @@
 
     h1 { 
         /* Margin added to acomodate menu button */
-        margin-left: 65px;
+        margin-left: 45px;
     }
 }
 
@@ -58,7 +58,7 @@
 
     h1 { 
         /* Margin added to acomodate menu button */
-        margin-left: 65px;
+        margin-left: 45px;
     }
 }
 
