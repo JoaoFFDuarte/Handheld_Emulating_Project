@@ -20,39 +20,36 @@ template.innerHTML = `
             </li>
             <li>
                 <a href="changelog.html" target="_self" id=changelog>📝 Changelog</a>
-                <a href="changelog.html" target="_self">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ03J8899E-Vh6SsuEscCHxh6ENeqE4qvTwPA4TFzzJUQ&s"></img>
-                </a>
+                <a href="index.html" target="_self" style="float: right; margin-right: var(--emoji-margin)">📝</a>
             </li>
             <li>
                 <a href="planning.html" target="_self" id=planning>📅 Planning</a>
-                <a href="planning.html" target="_self">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ03J8899E-Vh6SsuEscCHxh6ENeqE4qvTwPA4TFzzJUQ&s"></img>
-                </a>
+                <a href="index.html" target="_self" style="float: right; margin-right: var(--emoji-margin)">📅</a>
             </li>
             <li>
                 <a href="product.html" target="_self" id=product>🎮 Product</a>
-                <a href="product.html" target="_self">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ03J8899E-Vh6SsuEscCHxh6ENeqE4qvTwPA4TFzzJUQ&s"></img>
-                </a>
+                <a href="index.html" target="_self" style="float: right; margin-right: var(--emoji-margin)">🎮</a>
             </li>
             <li>
                 <a href="about.html" target="_self" id=about>🔎 About</a>
-                <a href="about.html" target="_self">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ03J8899E-Vh6SsuEscCHxh6ENeqE4qvTwPA4TFzzJUQ&s"></img>
-                </a>
+                <a href="index.html" target="_self" style="float: right; margin-right: var(--emoji-margin)">🔎</a>
             </li>
             <li>
                 <a href="contacts.html" target="_self" id=contacts>🌐 Contact</a>
-                <a href="contacts.html" target="_self">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ03J8899E-Vh6SsuEscCHxh6ENeqE4qvTwPA4TFzzJUQ&s"></img>
-                </a>
+                <a href="index.html" target="_self" style="float: right; margin-right: var(--emoji-margin)">🌐</a>
             </li>
         </ul>
         <br>
         <button id="toggleNightMode">Toggle Night Mode</button>
     </div>`
 ;
+
+/*-------------------------------------------------------------------------------------------------------------------------+
+|To switch from the emojis on the menu to images use the following code:                                                   |
+|<a href="contacts.html" target="_self">                                                                                   |
+|    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ03J8899E-Vh6SsuEscCHxh6ENeqE4qvTwPA4TFzzJUQ&s"></img>|
+|</a>                                                                                                                      |
++-------------------------------------------------------------------------------------------------------------------------*/
 
 document.body.insertBefore(template.content, document.body.firstChild);
 
