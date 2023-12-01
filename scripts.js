@@ -16,31 +16,31 @@ template.innerHTML = `
         <ul>
             <li>
                 <a href="index.html" target="_self" id=index>🏠 Home</a>
-                <a href="index.html" target="_self" style="float: right; margin-right: var(--emoji-margin)">🏠</a>
+                <a href="index.html" target="_self" style="float: right; margin-right: var(--emoji-margin)" id=menu_button_1>🏠</a>
             </li>
             <li>
                 <a href="changelog.html" target="_self" id=changelog>📝 Changelog</a>
-                <a href="index.html" target="_self" style="float: right; margin-right: var(--emoji-margin)">📝</a>
+                <a href="changelog.html" target="_self" style="float: right; margin-right: var(--emoji-margin)" id=menu_button_2>📝</a>
             </li>
             <li>
                 <a href="planning.html" target="_self" id=planning>📅 Planning</a>
-                <a href="index.html" target="_self" style="float: right; margin-right: var(--emoji-margin)">📅</a>
+                <a href="planning.html" target="_self" style="float: right; margin-right: var(--emoji-margin)" id=menu_button_3>📅</a>
             </li>
             <li>
                 <a href="product.html" target="_self" id=product>🎮 Product</a>
-                <a href="index.html" target="_self" style="float: right; margin-right: var(--emoji-margin)">🎮</a>
+                <a href="product.html" target="_self" style="float: right; margin-right: var(--emoji-margin)" id=menu_button_4>🎮</a>
             </li>
             <li>
                 <a href="about.html" target="_self" id=about>🔎 About</a>
-                <a href="index.html" target="_self" style="float: right; margin-right: var(--emoji-margin)">🔎</a>
+                <a href="about.html" target="_self" style="float: right; margin-right: var(--emoji-margin)" id=menu_button_5>🔎</a>
             </li>
             <li>
                 <a href="contacts.html" target="_self" id=contacts>🌐 Contact</a>
-                <a href="index.html" target="_self" style="float: right; margin-right: var(--emoji-margin)">🌐</a>
+                <a href="contacts.html" target="_self" style="float: right; margin-right: var(--emoji-margin)" id=menu_button_6>🌐</a>
             </li>
         </ul>
         <br>
-        <button id="toggleNightMode">Toggle Night Mode</button>
+        <button style="background-color: #222; margin-right: 0px;" id="toggleNightMode">Night button emoji</button><span>Night mode</span>
     </div>`
 ;
 
@@ -73,6 +73,12 @@ document.addEventListener('DOMContentLoaded', function () {
     // Apply dark mode based on stored preference
     setDarkMode(isDarkMode);
 
+    if (isDarkMode) {
+        toggleNightModeButton.innerText = "☀️";
+    } else{
+        toggleNightModeButton.innerText = "🌙";
+    }
+
     toggleNightModeButton.addEventListener('click', function () {
         // Toggle dark mode class on body
         body.classList.toggle('dark-mode');
@@ -80,8 +86,15 @@ document.addEventListener('DOMContentLoaded', function () {
         // Store the dark mode preference in local storage
         const isDarkModeNow = body.classList.contains('dark-mode');
         localStorage.setItem('darkMode', isDarkModeNow);
+
+        if (isDarkModeNow) {
+            toggleNightModeButton.innerText = "☀️";
+        } else{
+            toggleNightModeButton.innerText = "🌙";
+        }
     });
 });
+
 
 
 /*---------------------------------------------------------------------------
@@ -156,6 +169,24 @@ function toggleMenu() {
     if (width >= 500){
         width -= 85;
     }
+
     // Altering where the left is
     menu.style.left = menu.style.left === '0px' ? -width + 'px' : '0px';
+
+    // Toggling the emoji buttons on the menu
+    for (let i = 1; i < 7; i++){
+        // Access the buttons element
+        var buttons = document.getElementById("menu_button_" + i);
+
+        // Accessing the display property value
+        var displayValue = window.getComputedStyle(buttons).getPropertyValue('display');
+
+        if (displayValue == "block"){
+            displayValue = "none";
+        } else{
+            displayValue = "block";
+        }
+
+        buttons.style.display = displayValue
+    }
 }
