@@ -10,6 +10,8 @@ header {
     align-items: center;
     justify-content: space-between;
     display: flex;
+    z-index: 1; /* Ensure the header is above the rest of the body */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added shadow to differentiate from others on night mode */
 }
 
 .initialHeader {

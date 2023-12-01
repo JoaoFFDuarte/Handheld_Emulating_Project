@@ -15,7 +15,7 @@
     padding: 10px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    z-index: 2; /* Ensure the symbol is above the menu */
+    z-index: 3; /* Ensure the symbol is above the menu */
 }
 
 /*Popup-side-menu style*/
@@ -30,7 +30,7 @@
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: left 0.3s ease-in-out;
-    z-index: 1; /* Ensure the menu is below the symbol */
+    z-index: 2; /* Ensure the menu is below the symbol */
 }
 
 .popup-menu h2 {
