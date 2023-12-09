@@ -1,1 +1,2 @@
 Website building is almost finished!
+<img src="Images/console.png" class="center"></img>
