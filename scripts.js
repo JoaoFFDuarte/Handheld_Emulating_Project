@@ -122,30 +122,32 @@ for (var i = 0; i < menuLinks.length; i++) {
 /*---------------------------------------------------------------------------
 -------------------------Changelog file functionality------------------------
 ---------------------------------------------------------------------------*/
-// Specify the file path or URL
-var filePath = "https://joaoffduarte.github.io/Handheld_Emulating_Project/changelog.txt";
+if(currentPage == 'changelog'){
+    // Specify the file path or URL
+    var filePath = "https://joaoffduarte.github.io/Handheld_Emulating_Project/changelog.txt";
 
-// Create a new XMLHttpRequest object
-var xhr = new XMLHttpRequest();
+    // Create a new XMLHttpRequest object
+    var xhr = new XMLHttpRequest();
 
-// Configure it to GET the file
-xhr.open('GET', filePath, true);
+    // Configure it to GET the file
+    xhr.open('GET', filePath, true);
 
-// Set the response type to 'text'
-xhr.responseType = 'text';
+    // Set the response type to 'text'
+    xhr.responseType = 'text';
 
-// Define a callback function to handle the response
-xhr.onload = function () {
-    if (xhr.status === 200) {
-        // Display the file contents in the 'fileContents' element
-        document.getElementById('fileContents').innerHTML = xhr.responseText.replace(/\n/g, '<br>');
-    } else {
-        console.error('Failed to load the file.');
-    }
-};
+    // Define a callback function to handle the response
+    xhr.onload = function () {
+        if (xhr.status === 200) {
+            // Display the file contents in the 'fileContents' element
+            document.getElementById('fileContents').innerHTML = xhr.responseText.replace(/\n/g, '<br>');
+        } else {
+            console.error('Failed to load the file.');
+        }
+    };
 
-// Send the request
-xhr.send();
+    // Send the request
+    xhr.send();
+}
 
 
 
