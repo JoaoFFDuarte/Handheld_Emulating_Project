@@ -18,6 +18,6 @@ Reunion with scientific advisor for material list and project proposal
 19/12/2023
 
 The team had a meeting with the project's scientific advisor Prof. Fernando Gonçalves about the material list and the project proposal.
-We settled that, for now, we would order the FPGA (DE10-Nano from Terasic) with the SDRAM module and some joysticks. Other things like the battery or the screen would come later. We also wanted to get some buttons already but we were told there were already some within Tecnico so there wouldn't be a need.
+We settled that, for now, we would order the FPGA (DE10-Nano from Terasic) with the SDRAM module and some joysticks. Other things like the battery or the screen would come later. We also wanted to get some buttons already but we were told there were already some within Técnico so there wouldn't be a need.
 As for the project proposal, Prof. Fernando Gonçalves agreed on everything we proposed (you could see some of the propositions on the "planning" section of the website).
 We will soon send the temporary material list to be ordered.
