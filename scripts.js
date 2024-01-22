@@ -3,7 +3,8 @@
 ---------------------------------------------------------------------------*/
 const template = document.createElement("template");
 
-template.innerHTML = `
+template.innerHTML =
+    `
     <header class="initialHeader">
         <h1>Handheld Emulating Digital Console</h1>
     </header>
@@ -40,8 +41,9 @@ template.innerHTML = `
             </li>
         </ul>
         <br>
-        <button style="background-color: #222; margin-right: 0px;" id="toggleNightMode">Night button emoji</button><span>Night mode</span>
-    </div>`
+        <button style="background-color: #222; margin-right: 0px;" id="toggleNightMode">Night button emoji</button> <span>Night mode</span>
+    </div>
+    `
 ;
 
 /*-------------------------------------------------------------------------------------------------------------------------+
