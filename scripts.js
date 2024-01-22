@@ -8,7 +8,7 @@ template.innerHTML = `
         <h1>Handheld Emulating Digital Console</h1>
     </header>
 
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="menu-toggle" onclick="toggleMenu()" id="menuButton">☰</div>
 
     <div class="popup-menu" id="myMenu">
         <h2>Menu</h2>
@@ -154,6 +154,9 @@ if(currentPage == 'changelog'){
 /*---------------------------------------------------------------------------
 ------------------------Toggle side-menu functionality-----------------------
 ---------------------------------------------------------------------------*/
+// Variable that stores if the menu is open or closed (it's state)
+var isOpen = 0;
+
 // Toggle menu twice to get it in the right position
 toggleMenu();
 toggleMenu();
@@ -191,4 +194,22 @@ function toggleMenu() {
 
         buttons.style.display = displayValue
     }
+
+    // Changing the state variable
+    if (isOpen){
+        isOpen = 0;
+    } else{
+        isOpen = 1;
+    }
 }
+
+// Event to close menu if user clicks outside the menu window
+window.addEventListener('click', function(e){
+    // Check if the click is inside the menu
+    if (!document.getElementById("menuButton").contains(e.target) && (!document.getElementById("myMenu").contains(e.target))){
+        // If it's open, toggle it to close it
+        if (isOpen >= 1){
+            toggleMenu();
+        }
+    } 
+})
