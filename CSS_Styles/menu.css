@@ -54,7 +54,7 @@
     justify-content: space-between;
 }
 
-.popup-menu a, span {
+.popup-menu a, .popup-menu span {
     margin-left: 0px;
     text-decoration: none;
     color: white;
