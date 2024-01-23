@@ -7,6 +7,10 @@
     /*Light colored styles*/
     --background-body-color-light: #fff;
     --text-body-color-light: #333;
+
+    /*Dark colored styles*/
+    --background-body-color-dark: #333;
+    --text-body-color-dark: #fff;
 }
 
 
