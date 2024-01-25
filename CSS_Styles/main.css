@@ -6,12 +6,16 @@ main {
     padding: 20px;
 }
 
-.tabbingLVL1{
+.tabbingLVL1 {
     margin-left: 40px;
 }
 
-.tabbingLVL2{
+.tabbingLVL2 {
     margin-left: 60px;
+}
+
+main a {
+    margin-left: 0;
 }
 
 /*List Margin*/
