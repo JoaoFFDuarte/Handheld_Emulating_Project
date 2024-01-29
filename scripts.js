@@ -20,20 +20,20 @@ template.innerHTML =
                 <a href="index.html" target="_self" style="float: right; margin-right: var(--emoji-margin)" id=menu_button_1>🏠</a>
             </li>
             <li>
-                <a href="changelog.html" target="_self" id=changelog>📝 Changelog</a>
-                <a href="changelog.html" target="_self" style="float: right; margin-right: var(--emoji-margin)" id=menu_button_2>📝</a>
-            </li>
-            <li>
-                <a href="planning.html" target="_self" id=planning>📅 Planning</a>
-                <a href="planning.html" target="_self" style="float: right; margin-right: var(--emoji-margin)" id=menu_button_3>📅</a>
-            </li>
-            <li>
                 <a href="product.html" target="_self" id=product>🎮 Product</a>
                 <a href="product.html" target="_self" style="float: right; margin-right: var(--emoji-margin)" id=menu_button_4>🎮</a>
             </li>
             <li>
                 <a href="about.html" target="_self" id=about>🔎 About</a>
                 <a href="about.html" target="_self" style="float: right; margin-right: var(--emoji-margin)" id=menu_button_5>🔎</a>
+            </li>
+            <li>
+                <a href="planning.html" target="_self" id=planning>📅 Planning</a>
+                <a href="planning.html" target="_self" style="float: right; margin-right: var(--emoji-margin)" id=menu_button_3>📅</a>
+            </li>
+            <li>
+                <a href="changelog.html" target="_self" id=changelog>📝 Changelog</a>
+                <a href="changelog.html" target="_self" style="float: right; margin-right: var(--emoji-margin)" id=menu_button_2>📝</a>
             </li>
             <li>
                 <a href="contacts.html" target="_self" id=contacts>🌐 Contact</a>
