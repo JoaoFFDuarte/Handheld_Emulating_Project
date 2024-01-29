@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 /*---------------------------------------------------------------------------
-----------------------Current page highlight functionality----------------------
+----------------------Current page highlight functionality-------------------
 ---------------------------------------------------------------------------*/
 // Get the current page's filename
 var currentPage = window.location.pathname.split('/').pop();
