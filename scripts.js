@@ -36,7 +36,7 @@ template.innerHTML =
                 <a href="changelog.html" target="_self" style="float: right; margin-right: var(--emoji-margin)" id=menu_button_2>📝</a>
             </li>
             <li>
-                <a href="contacts.html" target="_self" id=contacts>🌐 Contact</a>
+                <a href="contacts.html" target="_self" id=contacts>🌐 Contacts</a>
                 <a href="contacts.html" target="_self" style="float: right; margin-right: var(--emoji-margin)" id=menu_button_6>🌐</a>
             </li>
         </ul>
