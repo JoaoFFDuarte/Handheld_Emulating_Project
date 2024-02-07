@@ -3,8 +3,8 @@
 /************************************************/
 
 header {
-    background-color: #333;
-    color: white;
+    background-color: var(--header-background-color-light);
+    color: var(--header-text-color-light);
     text-align: center;
     padding: 1em;
     align-items: center;
@@ -18,8 +18,8 @@ header {
 
 /*CHANGE TO DESIRED COLOR*/
 header.dark-mode {
-    background-color: #333;
-    color: white;
+    background-color: var(--header-background-color-dark);
+    color: var(--header-text-color-dark);
     text-align: center;
     padding: 1em;
     align-items: center;

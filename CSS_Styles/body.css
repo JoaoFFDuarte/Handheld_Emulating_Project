@@ -7,8 +7,8 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--background-body-color-light);
-    color: var(--text-body-color-light);
+    background-color: var(--body-background-color-light);
+    color: var(--body-text-color-light);
 }
 
 /*Dark Mode Styles */
@@ -16,6 +16,6 @@ body.dark-mode {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--background-body-color-dark);
-    color: var(--text-body-color-dark);
+    background-color: var(--body-background-color-dark);
+    color: var(--body-text-color-dark);
 }

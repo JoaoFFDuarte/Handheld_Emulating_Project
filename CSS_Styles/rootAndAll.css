@@ -4,13 +4,32 @@
 
 /*Global css variables*/
 :root {
-    /*Light colored styles*/
-    --background-body-color-light: #fff;
-    --text-body-color-light: #333;
+    /*Header Style variables*/
+        /*Light colored styles*/
+        --header-background-color-light: #333;
+        --header-text-color-light: #fff;
 
-    /*Dark colored styles*/
-    --background-body-color-dark: #333;
-    --text-body-color-dark: #fff;
+        /*Dark colored styles*/
+        --header-background-color-dark: #333;
+        --header-text-color-dark: #fff;
+
+    /*Body Style variables*/
+        /*Light colored styles*/
+        --body-background-color-light: #fff;
+        --body-text-color-light: #333;
+
+        /*Dark colored styles*/
+        --body-background-color-dark: #333;
+        --body-text-color-dark: #fff;
+    
+    /*Menu Style variables*/
+        /*Light colored styles*/
+        --menu-background-color-light: #333;
+        --menu-text-color-light: #fff;
+
+        /*Dark colored styles*/
+        --menu-background-color-dark: #333;
+        --menu-text-color-dark: #fff;
 }
 
 
