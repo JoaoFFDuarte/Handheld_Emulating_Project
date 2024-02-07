@@ -5,7 +5,7 @@ const template = document.createElement("template");
 
 template.innerHTML =
     `
-    <header class="initialHeader">
+    <header class="initialHeader" id="header">
         <h1>Handheld Emulating Digital Console</h1>
     </header>
 
@@ -63,10 +63,12 @@ document.body.insertBefore(template.content, document.body.firstChild);
 document.addEventListener('DOMContentLoaded', function () {
     const toggleNightModeButton = document.getElementById('toggleNightMode');
     const body = document.body;
+    const header = document.getElementById('header');
 
     // Function to set dark mode based on user preference
     const setDarkMode = (isDarkMode) => {
         body.classList.toggle('dark-mode', isDarkMode);
+        header.classList.toggle('dark-mode', isDarkMode);
     };
 
     // Check if dark mode preference is stored in local storage
@@ -82,8 +84,9 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     toggleNightModeButton.addEventListener('click', function () {
-        // Toggle dark mode class on body
+        // Toggle dark mode class on body and header
         body.classList.toggle('dark-mode');
+        header.classList.toggle('dark-mode');
 
         // Store the dark mode preference in local storage
         const isDarkModeNow = body.classList.contains('dark-mode');
