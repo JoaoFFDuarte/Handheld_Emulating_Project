@@ -18,6 +18,7 @@
     z-index: 3; /* Ensure the symbol is above the menu */
 }
 
+
 /*Popup-side-menu style*/
 .popup-menu {
     margin-left: 0px;
@@ -32,6 +33,22 @@
     transition: left 0.3s ease-in-out;
     z-index: 2; /* Ensure the menu is below the symbol */
 }
+
+/*CHANGE TO DESIRED COLOR*/
+.popup-menu.dark-mode{
+    margin-left: 0px;
+    position: fixed;
+    top: 0;
+    width: var(--menu-box-width);
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease-in-out;
+    z-index: 2; /* Ensure the menu is below the symbol */
+}
+
 
 .popup-menu h2 {
     margin-left: 0px;
@@ -54,12 +71,22 @@
     justify-content: space-between;
 }
 
+
 .popup-menu a, .popup-menu span {
     margin-left: 0px;
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
+
+/*CHANGE TO DESIRED COLOR*/
+.popup-menu.dark-mode a, .popup-menu.dark-mode span {
+    margin-left: 0px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
 
 /*Hovering and current page menu Style*/
 .popup-menu a:hover, .popup-menu a.active {
@@ -72,13 +99,4 @@
 #toggleNightMode {
     margin-left: auto;
     margin-right: 15px; 
-}
-
-/*Images on the menu*/
-.popup-menu img{
-    height: var(--menu-img-height);
-    width: 45px;
-    display: block;
-    float: right;
-    border-radius: 5px;
 }

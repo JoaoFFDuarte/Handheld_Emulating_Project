@@ -64,11 +64,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const toggleNightModeButton = document.getElementById('toggleNightMode');
     const body = document.body;
     const header = document.getElementById('header');
+    const menu = document.getElementById('myMenu');
 
     // Function to set dark mode based on user preference
     const setDarkMode = (isDarkMode) => {
         body.classList.toggle('dark-mode', isDarkMode);
         header.classList.toggle('dark-mode', isDarkMode);
+        menu.classList.toggle('dark-mode', isDarkMode);
     };
 
     // Check if dark mode preference is stored in local storage
@@ -87,6 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Toggle dark mode class on body and header
         body.classList.toggle('dark-mode');
         header.classList.toggle('dark-mode');
+        menu.classList.toggle('dark-mode');
 
         // Store the dark mode preference in local storage
         const isDarkModeNow = body.classList.contains('dark-mode');
