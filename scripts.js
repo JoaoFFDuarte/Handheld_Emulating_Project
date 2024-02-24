@@ -41,7 +41,7 @@ template.innerHTML =
             </li>
         </ul>
         <br>
-        <button style="background-color: #222; margin-right: 0px;" id="toggleNightMode">Night button emoji</button> <span>Night mode</span>
+        <button id="toggleNightMode">Night button emoji</button> <span>Night mode</span>
     </div>
     `
 ;

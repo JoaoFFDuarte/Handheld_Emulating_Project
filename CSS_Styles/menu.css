@@ -97,5 +97,6 @@
 /*Toggle Night Mode button Style*/
 #toggleNightMode {
     margin-left: auto;
-    margin-right: 15px; 
+    margin-right: 15px;
+    background-color: #112;
 }

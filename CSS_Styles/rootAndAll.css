@@ -6,29 +6,29 @@
 :root {
     /*Header Style variables*/
         /*Light colored styles*/
-        --header-background-color-light: #333;
-        --header-text-color-light: #fff;
+        --header-background-color-light: #ccc;
+        --header-text-color-light: #334;
 
         /*Dark colored styles*/
-        --header-background-color-dark: #333;
+        --header-background-color-dark: #556;
         --header-text-color-dark: #fff;
 
     /*Body Style variables*/
         /*Light colored styles*/
         --body-background-color-light: #fff;
-        --body-text-color-light: #333;
+        --body-text-color-light: #334;
 
         /*Dark colored styles*/
-        --body-background-color-dark: #333;
+        --body-background-color-dark: #334;
         --body-text-color-dark: #fff;
     
     /*Menu Style variables*/
         /*Light colored styles*/
-        --menu-background-color-light: #333;
+        --menu-background-color-light: #223;
         --menu-text-color-light: #fff;
 
         /*Dark colored styles*/
-        --menu-background-color-dark: #333;
+        --menu-background-color-dark: #223;
         --menu-text-color-dark: #fff;
 }
 
