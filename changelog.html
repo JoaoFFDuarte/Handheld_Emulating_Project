@@ -30,10 +30,75 @@
     <script src="scripts.js" type="text/javascript" defer></script>
 </head>
 
+
+<!--
+    Changelog Template:
+
+    <div id="Update_#" class="tabbingLVL2">
+        <h3 class="general_title">Title (dd/mm/yyyy):</h3>
+        <p class="tabbingLVL2">
+            
+        </p>
+        <br>
+    </div>
+-->
+<!--<video width="60%" height="auto" controls>
+    <source src="movie.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>-->
+
+
 <body>
     <main>
         <section id="changelog">
             <h2>Changelog</h2>
+
+            <div id="Update_7" class="tabbingLVL2">
+                <h3 class="general_title">First hands-on! (27/02/2024):</h3>
+                <p class="tabbingLVL2">
+                    We started by following the
+                    <a href="https://mister-devel.github.io/MkDocs_MiSTer/setup/software/" target="_self" id=index>tutorial on the MiSTer FPGA documentation website</a>.
+                    So we flashed the micro SD card that came with the FPGA and booted up the FPGA with it:<br><br>
+                    <img src="Images/FPGA_Setup.webp" class="center" alt="FPGA Setup"></img><br>
+                    
+                    It went into setup mode:<br><br>
+                    <img src="Images/MiSTer_Software_Setup.jpg" class="center" alt="MiSTer Software Setup"></img><br>
+
+                    After that we waited some time as it said in the installation image (as seen above), but all we would get was a black screen.
+                    We tried a bunch of things including flashing the micro SD card again, changing monitors, etc,... But nothing seemed to work.<br>
+                    We saw an example config file that seemed to have an option to allow VGA output. As all the monitors we were using at the time had VGA only input
+                    we tried moving to a different room that had an HDMI input. We then found a room that had a projector with HDMI input so we went with that.
+                    We tried doing the setup again and soon enough we had a video output!<br><br>
+                    <img src="Images/MiSTer_Output.webp" class="center" alt="MiSTer Software Setup"></img><br>
+
+                    After that we connected the FPGA through ethernet to run an updater script to download all the cores<br><br>
+                    <video class="center" width="75%" height="auto" controls>
+                        <source src="Video/Updater_Running.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <br>
+                    <video class="center" width="30%" height="auto" controls>
+                        <source src="Video/Ethernet_Connection_And_Cores_Installed.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <br>
+
+                    We then loaded some games into a games folder on the micro SD card and played a bit!<br><br>
+                    <video class="center" width="75%" height="auto" controls>
+                        <source src="Video/Game_Running_XQC_PC.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </p>
+                <br>
+            </div>
+
+            <div id="Update_6" class="tabbingLVL2">
+                <h3 class="general_title">Requested material on our hands! (26/02/2024):</h3>
+                <p class="tabbingLVL2">
+                    The material we requested previously was delivered to us. We will start working tomorrow on it!
+                </p>
+                <br>
+            </div>
 
             <div id="Update_5" class="tabbingLVL2">
                 <h3 class="general_title">Project Reunion [No. 1] (21/02/2024):</h3>
