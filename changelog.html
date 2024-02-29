@@ -34,7 +34,7 @@
 <!--
     Changelog Template:
 
-    <div id="Update_#" class="tabbingLVL2">
+    <div id="Update_#">
         <h3 class="general_title">Title (dd/mm/yyyy):</h3>
         <p class="tabbingLVL2">
             
@@ -42,10 +42,6 @@
         <br>
     </div>
 -->
-<!--<video width="60%" height="auto" controls>
-    <source src="movie.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-</video>-->
 
 
 <body>
@@ -53,7 +49,36 @@
         <section id="changelog_OnPage">
             <h2>Changelog</h2>
 
-            <div id="Update_7" class="tabbingLVL2">
+            <div id="Update_8">
+                <h3 class="general_title">Temperature measurements and PSX and NES cores update (29/02/2024):</h3>
+                <p class="tabbingLVL2">
+                    The team measured the FPGA running at 45ºC after about half an hour of PSX gameplay,
+                    the core that is probably most demanding.
+                    We will do further testing in a closed box,
+                    but the temps seem probably fine and just an heat sink on the FPGA's processor
+                    should do the work.
+                    <br><br>
+
+                    The PSX core is now working! We had to load a
+                    <a href="https://github.com/MiSTer-devel/PSX_MiSTer#bios" target="_self">PSX BIOS</a>
+                    to make it work but it is now working fine!<br><br>
+
+                    <video class="center" width="75%" height="auto" controls>
+                        <source src="Video/PSX_Running.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <br>
+
+                    About the NES core, we discovered it had something to do with how the original games and consoles were made.
+                    It seems like the NES core for the MiSTer project was made using USA standards,
+                    that is, based on USA outlet frequencies.
+                    Because of this, only USA ROMs for games should work with the NES core,
+                    making other ROMs from Japan or Europe run differently from intended.
+                </p>
+                <br>
+            </div>
+
+            <div id="Update_7">
                 <h3 class="general_title">First hands-on! (27/02/2024):</h3>
                 <p class="tabbingLVL2">
                     We started by following the
@@ -88,11 +113,13 @@
                         <source src="Video/Game_Running_XQC_PC.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
+
+                    Unfortunately NES games were running faster than intended and PSX games weren't running at all... The team will look into it.
                 </p>
                 <br>
             </div>
 
-            <div id="Update_6" class="tabbingLVL2">
+            <div id="Update_6">
                 <h3 class="general_title">Requested material on our hands! (26/02/2024):</h3>
                 <p class="tabbingLVL2">
                     The material we requested previously was delivered to us. We will start working tomorrow on it!
@@ -100,7 +127,7 @@
                 <br>
             </div>
 
-            <div id="Update_5" class="tabbingLVL2">
+            <div id="Update_5">
                 <h3 class="general_title">Project Reunion [No. 1] (21/02/2024):</h3>
                 <p class="tabbingLVL2">
                     The team members all attended the meeting with the project coordinator and monitor at around 17 o'clock.<br>
@@ -111,7 +138,7 @@
                 <br>
             </div>
 
-            <div id="Update_4" class="tabbingLVL2">
+            <div id="Update_4">
                 <h3 class="general_title">Update on requested material [2] (23/01/2024):</h3>
                 <p class="tabbingLVL2">
                     We were told the material was already requested on the IST shopping platform.
@@ -120,7 +147,7 @@
                 <br>
             </div>
 
-            <div id="Update_3" class="tabbingLVL2">
+            <div id="Update_3">
                 <h3 class="general_title">Update on requested material [1] (09/01/2024):</h3>
                 <p class="tabbingLVL2">
                     We asked Dr Marli Gomes about the material list and she said she was waiting on supplier estimate for the material.
@@ -128,14 +155,14 @@
                 <br>
             </div>
 
-            <div id="Update_2" class="tabbingLVL2">
+            <div id="Update_2">
                 <h3 class="general_title">Sent temporary material list (22/12/2023):</h3>
                 <p class="tabbingLVL2">
                     The temporary material list was sent to Dr Marli Gomes from the Scientific Area of Electronics
                     so hopefuly we can start working as soon as the 2nd semester starts.
                     <br><br>
                     The list was the following:<br>
-                    <div class="tabbingLVL2">
+                    <div>
                         <ul>
                             <li>FPGA (DE10-Nano from Terasic);</li>
                             <li>SDRAM module;</li>
@@ -146,7 +173,7 @@
                 <br>
             </div>
 
-            <div id="Update_1" class="tabbingLVL2">
+            <div id="Update_1">
                 <h3 class="general_title">Reunion with scientific advisor for material list and project proposal (19/12/2023):</h3>
                 <p class="tabbingLVL2">
                     The team had a meeting with the project's scientific advisor Prof. Fernando Gonçalves about the material list and the project proposal.<br>

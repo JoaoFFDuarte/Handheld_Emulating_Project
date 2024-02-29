@@ -72,41 +72,30 @@
                 </h2>
                 <p class="center">This is our latest post on the changelog:</p>
                 
-                <div id="Update_7" class="tabbingLVL2">
-                    <h3 class="general_title">First hands-on! (27/02/2024):</h3>
-                    <p class="tabbingLVL2">
-                        We started by following the
-                        <a href="https://mister-devel.github.io/MkDocs_MiSTer/setup/software/" target="_self">tutorial on the MiSTer FPGA documentation website</a>.
-                        So we flashed the micro SD card that came with the FPGA and booted up the FPGA with it:<br><br>
-                        <img src="Images/FPGA_Setup.webp" class="center" alt="FPGA Setup"></img><br>
-                        
-                        It went into setup mode:<br><br>
-                        <img src="Images/MiSTer_Software_Setup.jpg" class="center" alt="MiSTer Software Setup"></img><br>
+                <div id="Update_8">
+                    <h3 class="general_title">Temperature measurements and PSX and NES cores update (29/02/2024):</h3>
+                    <p class="tabbingLVL1">
+                        The team measured the FPGA running at 45ºC after about half an hour of PSX gameplay,
+                        the core that is probably most demanding.
+                        We will do further testing in a closed box,
+                        but the temps seem probably fine and just an heat sink on the FPGA's processor
+                        should do the work.
+                        <br><br>
     
-                        After that we waited some time as it said in the installation image (as seen above), but all we would get was a black screen.
-                        We tried a bunch of things including flashing the micro SD card again, changing monitors, etc,... But nothing seemed to work.<br>
-                        We saw an example config file that seemed to have an option to allow VGA output. As all the monitors we were using at the time had VGA only input
-                        we tried moving to a different room that had an HDMI input. We then found a room that had a projector with HDMI input so we went with that.
-                        We tried doing the setup again and soon enough we had a video output!<br><br>
-                        <img src="Images/MiSTer_Output.webp" class="center" alt="MiSTer Software Setup"></img><br>
-    
-                        After that we connected the FPGA through ethernet to run an updater script to download all the cores<br><br>
+                        The PSX core is now working! We had to load a
+                        <a href="https://github.com/MiSTer-devel/PSX_MiSTer#bios" target="_self">PSX BIOS</a>
+                        to make it work but it is now working fine!<br><br>
                         <video class="center" width="75%" height="auto" controls>
-                            <source src="Video/Updater_Running.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
-                        <br>
-                        <video class="center" width="30%" height="auto" controls>
-                            <source src="Video/Ethernet_Connection_And_Cores_Installed.mp4" type="video/mp4">
+                            <source src="Video/PSX_Running.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <br>
     
-                        We then loaded some games into a games folder on the micro SD card and played a bit!<br><br>
-                        <video class="center" width="75%" height="auto" controls>
-                            <source src="Video/Game_Running_XQC_PC.mp4" type="video/mp4">
-                            Your browser does not support the video tag.
-                        </video>
+                        About the NES core, we discovered it had something to do with how the original games and consoles were made.
+                        It seems like the NES core for the MiSTer project was made using USA standards,
+                        that is, based on USA outlet frequencies.
+                        Because of this, only USA ROMs for games should work with the NES core,
+                        making other ROMs from Japan or Europe run differently from intended.
                     </p>
                     <br>
                 </div>
