@@ -32,7 +32,7 @@ template.innerHTML =
                 <a href="planning.html" target="_self" style="float: right; margin-right: var(--emoji-margin)" id=menu_button_3>📅</a>
             </li>
             <li>
-                <a href="changelog.html" target="_self" id=changelog>📝 Changelog</a>
+                <a href="changelog.html" target="_self" id=changelog>📝 Blog</a>
                 <a href="changelog.html" target="_self" style="float: right; margin-right: var(--emoji-margin)" id=menu_button_2>📝</a>
             </li>
             <li>
