@@ -45,7 +45,7 @@ img {
     height: auto;
 }
 
-/* Image Center */
+/*Image Center*/
 .center {
     display: block;
     margin: 0 auto;
@@ -54,4 +54,10 @@ img {
 
 .noline {
     text-decoration: none;
+}
+
+/*Fotos Styling*/
+.fotos {
+    width: var(--fotos-width);
+    height: var(--fotos-height);
 }

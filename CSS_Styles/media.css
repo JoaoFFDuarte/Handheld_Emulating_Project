@@ -17,6 +17,8 @@
         --menu-box-width: 300px;
         --menu-img-height: 13px;
         --emoji-margin: 10px;
+        --fotos-width: 150px;
+        --fotos-height: auto;
     }
 
     /*Styling changes for everything*/
@@ -50,6 +52,8 @@
         --menu-box-width: 400px;
         --menu-img-height: 16px;
         --emoji-margin: 10px;
+        --fotos-width: 200px;
+        --fotos-height: auto;
     }
 
     * {
@@ -82,6 +86,8 @@
         --menu-box-width: 500px;
         --menu-img-height: 18px;
         --emoji-margin: 10px;
+        --fotos-width: 250px;
+        --fotos-height: auto;
     }
     
     * {
@@ -111,6 +117,8 @@
         --menu-box-width: 600px;
         --menu-img-height: 24px;
         --emoji-margin: 6px;
+        --fotos-width: 300px;
+        --fotos-height: auto;
     }
 
     * {
@@ -141,6 +149,8 @@
         --menu-box-width: 700px;
         --menu-img-height: 32px;
         --emoji-margin: 0px;
+        --fotos-width: 350px;
+        --fotos-height: auto;
     }
 
     * {
