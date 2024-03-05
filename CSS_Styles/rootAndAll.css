@@ -60,4 +60,5 @@ img {
 .fotos {
     width: var(--fotos-width);
     height: var(--fotos-height);
+    min-height: var(--fotos-min-height);
 }
