@@ -47,6 +47,82 @@
 <body>
     <main>
         <section id="changelog_OnPage">
+            <div id="Update_11">
+                <h3 class="general_title">Arduino detecting most controls (07/03/2024):</h3>
+                <p class="tabbingLVL2">
+                    The Arduino code for detecting controls is working but unfortunately
+                    we don't have enough cables to make every connection needed right now.<br>
+                    We also don't yet have the Arduino required to make it function as a keyboard
+                    (We have a borrowed Arduino Uno but we would need, for example, an Arduino Nano ESP32).
+                    Here you can find the
+                    <a href="https://www.arduino.cc/reference/en/language/functions/usb/keyboard/" target="_self">
+                        full list of supported devices</a>.<br>
+                    We were thinking about using an Arduino Nano ESP32 as it is
+                    the smallest, the least expensive of them all and does all we want.<br>
+                    We will post the Arduino code on GitHub when we make sure it works on an Arduino Nano ESP32 board.<br><br>
+                    <video class="center" width="75%" height="auto" controls>
+                        <source src="Video/Arduino_Detecting_1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <br>
+                    In the end, the idea is to have everything, control-wise, in a PCB.
+                </p>
+                <br>
+            </div>
+
+            <div id="Update_10">
+                <h3 class="general_title">Project Reunion [No. 3] (06/03/2024):</h3>
+                <p class="tabbingLVL2">
+                    The team discussed about possible legal issues for the project (questions about hardware and software emulation legality).
+                    We concluded that, for the hardware side at least, we were clear, as emulators have been declared legal in past lawsuits.
+                    Only the inclusion of illegally distributed ROM's of the games could bring us trouble (which obviously we don't plan on doing).
+                    <br>
+                    The team also discussed about some website changes proposed by Luis Caldas Oliveira (PIC organizer):<br>
+                    <div>
+                        <ul>
+                            <li>Inclusion of photos of the people involved;</li>
+                            <li>Some technicalities in wording.</li>
+                        </ul>
+                    </div>
+                </p>
+                <p class="tabbingLVL2">
+                    He also proposed we talk to some people who might use the product in order to get some feedback.
+                </p>
+                <br>
+            </div>
+
+            <div id="Update_9">
+                <h3 class="general_title">Afternoon work session [No. 1] (06/03/2024):</h3>
+                <p class="tabbingLVL2">
+                    A part of the team tried to get VGA output from the FPGA to make testing more convenient as many of the monitors
+                    were VGA only.
+                    Unfortunately, after messing around with the settings, we were unable to do so,
+                    as apparently only some VGA to HDMI adaptors work with the MiSTer project.
+                    Another part of the team went to test if we could get the FPGA working on DC voltage through a connector made
+                    by Sr. Rui (Laboratory helper from the Taguspark campus):<br><br>
+                    <img src="Images/FPGA_DC_Connector.webp" class="center" alt="FPGA DC Connector"></img><br>
+                    With this we were able to confidently determine the necessary voltage and current to power the fpga,
+                    even when running it's most demanding core:<br><br>
+                    <img src="Images/DC_Output.webp" class="center" alt="FPGA DC Connector"></img><br>
+                    For a good while, we were unsure of how much voltage it actually required,
+                    since although most of the documentation says it required 5V and 1A,
+                    for some reason the fpga has an LED that light's up when it receives 3.3V of power,
+                    which left us a bit confused, as we have no idea why this value was picked.<br>
+                    The highest value we noted was about 5V and 1.1A, making it safe to assume the FPGA
+                    won't consume more than 10W of power constantly.<br>
+                    As we did this work session a little bit before our project reunion, during our work session
+                    Marcelino and Francisco appeared to check out our work. They came with a projector with and HDMI input
+                    so we could show them what we did until now.
+                    Here's an overview video of what we did:<br><br>
+                    <video class="center" width="75%" height="auto" controls>
+                        <source src="Video/Work_Session_Overview_1.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <br>
+                </p>
+                <br>
+            </div>
+
             <div id="Update_8">
                 <h3 class="general_title">Temperature measurements and PSX and NES cores update (29/02/2024):</h3>
                 <p class="tabbingLVL2">

@@ -72,30 +72,25 @@
                 </h2>
                 <p class="center">This is our latest post on the blog:</p>
                 
-                <div id="Update_8">
-                    <h3 class="general_title">Temperature measurements and PSX and NES cores update (29/02/2024):</h3>
-                    <p class="tabbingLVL1">
-                        The team measured the FPGA running at 45ºC after about half an hour of PSX gameplay,
-                        the core that is probably most demanding.
-                        We will do further testing in a closed box,
-                        but the temps seem probably fine and just an heat sink on the FPGA's processor
-                        should do the work.
-                        <br><br>
-    
-                        The PSX core is now working! We had to load a
-                        <a href="https://github.com/MiSTer-devel/PSX_MiSTer#bios" target="_self">PSX BIOS</a>
-                        to make it work but it is now working fine!<br><br>
+                <div id="Update_11">
+                    <h3 class="general_title">Arduino detecting most controls (07/03/2024):</h3>
+                    <p class="tabbingLVL2">
+                        Arduino code for detecting controls is working but unfortunately
+                        we don't have enough cables to make every connection needed right now.<br>
+                        We also don't yet have the Arduino required to make it function as a keyboard
+                        (We have a borrowed Arduino Uno but we would need, for example, an Arduino Nano ESP32).
+                        Here you can find the
+                        <a href="https://www.arduino.cc/reference/en/language/functions/usb/keyboard/" target="_self">
+                            full list of supported devices</a>.<br>
+                        We were thinking about using an Arduino Nano ESP32 as it is
+                        the smallest, the least expensive of them all and does all we want.<br>
+                        We will post the Arduino code for open source when we make sure it works on an Arduino Nano ESP32 board.<br><br>
                         <video class="center" width="75%" height="auto" controls>
-                            <source src="Video/PSX_Running.mp4" type="video/mp4">
+                            <source src="Video/Arduino_Detecting_1.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                         <br>
-    
-                        About the NES core, we discovered it had something to do with how the original games and consoles were made.
-                        It seems like the NES core for the MiSTer project was made using USA standards,
-                        that is, based on USA outlet frequencies.
-                        Because of this, only USA ROMs for games should work with the NES core,
-                        making other ROMs from Japan or Europe run differently from intended.
+                        In the end, the idea is to have everything, control-wise, in a PCB.
                     </p>
                     <br>
                 </div>
