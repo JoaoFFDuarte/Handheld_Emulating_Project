@@ -39,11 +39,6 @@
 }
 
 
-/*Image Styling*/
-img {
-    max-width: 100%;
-    height: auto;
-}
 
 /*Image Center*/
 .center {
@@ -57,8 +52,27 @@ img {
 }
 
 /*Fotos Styling*/
-.fotos {
-    width: var(--fotos-width);
-    height: var(--fotos-height);
-    min-height: var(--fotos-min-height);
+.fotos_v {
+    width: var(--fotos-v-width);
+    height: var(--fotos-v-height);
+    min-height: var(--fotos-v-min-height);
+}
+
+.fotos_h {
+    width: var(--fotos-h-width);
+    height: var(--fotos-h-height);
+    min-height: var(--fotos-h-min-height);
+}
+
+/*Video Styling*/
+.format_video_v {
+    width: var(--videos-v-width);
+    height: var(--videos-v-height);
+    min-height: var(--videos-v-min-height);
+}
+
+.format_video_h {
+    width: var(--videos-h-width);
+    height: var(--videos-h-height);
+    min-height: var(--videos-h-min-height);
 }

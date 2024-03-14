@@ -60,7 +60,7 @@
                     We were thinking about using an Arduino Nano ESP32 as it is
                     the smallest, the least expensive of them all and does all we want.<br>
                     We will post the Arduino code on GitHub when we make sure it works on an Arduino Nano ESP32 board.<br><br>
-                    <video class="center" width="75%" height="auto" controls>
+                    <video class="center format_video_v" width="75%" height="auto" controls>
                         <source src="Video/Arduino_Detecting_1.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -100,10 +100,10 @@
                     as apparently only some VGA to HDMI adaptors work with the MiSTer project.
                     Another part of the team went to test if we could get the FPGA working on DC voltage through a connector made
                     by Sr. Rui (Laboratory helper from the Taguspark campus):<br><br>
-                    <img src="Images/FPGA_DC_Connector.webp" class="center" alt="FPGA DC Connector"></img><br>
+                    <img src="Images/FPGA_DC_Connector.webp" class="center fotos_v" alt="FPGA DC Connector"></img><br>
                     With this we were able to confidently determine the necessary voltage and current to power the fpga,
                     even when running it's most demanding core:<br><br>
-                    <img src="Images/DC_Output.webp" class="center" alt="FPGA DC Connector"></img><br>
+                    <img src="Images/DC_Output.webp" class="center fotos_h" alt="FPGA DC Connector"></img><br>
                     For a good while, we were unsure of how much voltage it actually required,
                     since although most of the documentation says it required 5V and 1A,
                     for some reason the fpga has an LED that light's up when it receives 3.3V of power,
@@ -114,7 +114,7 @@
                     Marcelino and Francisco appeared to check out our work. They came with a projector with and HDMI input
                     so we could show them what we did until now.
                     Here's an overview video of what we did:<br><br>
-                    <video class="center" width="75%" height="auto" controls>
+                    <video class="center format_video_v" width="75%" height="auto" controls>
                         <source src="Video/Work_Session_Overview_1.mov" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -137,7 +137,7 @@
                     <a href="https://github.com/MiSTer-devel/PSX_MiSTer#bios" target="_self">PSX BIOS</a>
                     to make it work but it is now working fine!<br><br>
 
-                    <video class="center" width="75%" height="auto" controls>
+                    <video class="center format_video_h" width="75%" height="auto" controls>
                         <source src="Video/PSX_Running.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -158,35 +158,36 @@
                     We started by following the
                     <a href="https://mister-devel.github.io/MkDocs_MiSTer/setup/software/" target="_self">tutorial on the MiSTer FPGA documentation website</a>.
                     So we flashed the micro SD card that came with the FPGA and booted up the FPGA with it:<br><br>
-                    <img src="Images/FPGA_Setup.webp" class="center" alt="FPGA Setup"></img><br>
+                    <img src="Images/FPGA_Setup.webp" class="center fotos_h" alt="FPGA Setup"></img><br>
                     
                     It went into setup mode:<br><br>
-                    <img src="Images/MiSTer_Software_Setup.webp" class="center" alt="MiSTer Software Setup"></img><br>
+                    <img src="Images/MiSTer_Software_Setup.webp" class="center fotos_h" alt="MiSTer Software Setup"></img><br>
 
                     After that we waited some time as it said in the installation image (as seen above), but all we would get was a black screen.
                     We tried a bunch of things including flashing the micro SD card again, changing monitors, etc,... But nothing seemed to work.<br>
                     We saw an example config file that seemed to have an option to allow VGA output. As all the monitors we were using at the time had VGA only input
                     we tried moving to a different room that had an HDMI input. We then found a room that had a projector with HDMI input so we went with that.
                     We tried doing the setup again and soon enough we had a video output!<br><br>
-                    <img src="Images/MiSTer_Output.webp" class="center" alt="MiSTer Software Setup"></img><br>
+                    <img src="Images/MiSTer_Output.webp" class="center fotos_v" alt="MiSTer Software Setup"></img><br>
 
                     After that we connected the FPGA through ethernet to run an updater script to download all the cores<br><br>
-                    <video class="center" width="75%" height="auto" controls>
+                    <video class="center format_video_h" width="75%" height="auto" controls>
                         <source src="Video/Updater_Running.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <br>
-                    <video class="center" width="30%" height="auto" controls>
+                    <video class="center format_video_v" width="30%" height="auto" controls>
                         <source src="Video/Ethernet_Connection_And_Cores_Installed.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
                     <br>
 
                     We then loaded some games into a games folder on the micro SD card and played a bit!<br><br>
-                    <video class="center" width="75%" height="auto" controls>
+                    <video class="center format_video_h" width="75%" height="auto" controls>
                         <source src="Video/Game_Running_XQC_PC.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
+                    <br>
 
                     Unfortunately NES games were running faster than intended and PSX games weren't running at all... The team will look into it.
                 </p>

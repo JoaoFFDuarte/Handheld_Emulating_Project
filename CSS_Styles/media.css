@@ -17,9 +17,22 @@
         --menu-box-width: 300px;
         --menu-img-height: 13px;
         --emoji-margin: 10px;
-        --fotos-width: 200px;
-        --fotos-height: auto;
-        --fotos-min-height: var(var(--fotos-width));
+
+        --fotos-h-width: 400px;
+        --fotos-h-height: auto;
+        --fotos-h-min-height: var(var(--fotos-h-width));
+        
+        --fotos-v-width: 200px;
+        --fotos-v-height: auto;
+        --fotos-v-min-height: var(var(--fotos-v-width));
+
+        --videos-h-width: 400px;
+        --videos-h-height: auto;
+        --videos-h-min-height: var(var(--videos-h-width));
+
+        --videos-v-width: 200px;
+        --videos-v-height: auto;
+        --videos-v-min-height: var(var(--videos-v-width));
     }
 
     /*Styling changes for everything*/
@@ -53,9 +66,22 @@
         --menu-box-width: 400px;
         --menu-img-height: 16px;
         --emoji-margin: 10px;
-        --fotos-width: 250px;
-        --fotos-height: auto;
-        --fotos-min-height: var(var(--fotos-width));
+
+        --fotos-h-width: 500px;
+        --fotos-h-height: auto;
+        --fotos-h-min-height: var(var(--fotos-h-width));
+        
+        --fotos-v-width: 250px;
+        --fotos-v-height: auto;
+        --fotos-v-min-height: var(var(--fotos-v-width));
+
+        --videos-h-width: 500px;
+        --videos-h-height: auto;
+        --videos-h-min-height: var(var(--videos-h-width));
+
+        --videos-v-width: 250px;
+        --videos-v-height: auto;
+        --videos-v-min-height: var(var(--videos-v-width));
     }
 
     * {
@@ -88,9 +114,22 @@
         --menu-box-width: 500px;
         --menu-img-height: 18px;
         --emoji-margin: 10px;
-        --fotos-width: 300px;
-        --fotos-height: auto;
-        --fotos-min-height: var(var(--fotos-width));
+
+        --fotos-h-width: 600px;
+        --fotos-h-height: auto;
+        --fotos-h-min-height: var(var(--fotos-h-width));
+        
+        --fotos-v-width: 300px;
+        --fotos-v-height: auto;
+        --fotos-v-min-height: var(var(--fotos-v-width));
+
+        --videos-h-width: 600px;
+        --videos-h-height: auto;
+        --videos-h-min-height: var(var(--videos-h-width));
+
+        --videos-v-width: 300px;
+        --videos-v-height: auto;
+        --videos-v-min-height: var(var(--videos-v-width));
     }
     
     * {
@@ -120,9 +159,22 @@
         --menu-box-width: 600px;
         --menu-img-height: 24px;
         --emoji-margin: 6px;
-        --fotos-width: 350px;
-        --fotos-height: auto;
-        --fotos-min-height: var(var(--fotos-width));
+
+        --fotos-h-width: 800px;
+        --fotos-h-height: auto;
+        --fotos-h-min-height: var(var(--fotos-h-width));
+        
+        --fotos-v-width: 400px;
+        --fotos-v-height: auto;
+        --fotos-v-min-height: var(var(--fotos-v-width));
+
+        --videos-h-width: 800px;
+        --videos-h-height: auto;
+        --videos-h-min-height: var(var(--videos-h-width));
+
+        --videos-v-width: 400px;
+        --videos-v-height: auto;
+        --videos-v-min-height: var(var(--videos-v-width));
     }
 
     * {
@@ -153,9 +205,22 @@
         --menu-box-width: 700px;
         --menu-img-height: 32px;
         --emoji-margin: 0px;
-        --fotos-width: 400px;
-        --fotos-height: auto;
-        --fotos-min-height: var(var(--fotos-width));
+
+        --fotos-h-width: 1000px;
+        --fotos-h-height: auto;
+        --fotos-h-min-height: var(var(--fotos-h-width));
+
+        --fotos-v-width: 500px;
+        --fotos-v-height: auto;
+        --fotos-v-min-height: var(var(--fotos-v-width));
+
+        --videos-h-width: 1000px;
+        --videos-h-height: auto;
+        --videos-h-min-height: var(var(--videos-h-width));
+
+        --videos-v-width: 500px;
+        --videos-v-height: auto;
+        --videos-v-min-height: var(var(--videos-v-width));
     }
 
     * {
