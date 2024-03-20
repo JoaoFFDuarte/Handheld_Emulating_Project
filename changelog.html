@@ -47,6 +47,60 @@
 <body>
     <main>
         <section id="changelog_OnPage">
+            <div id="Update_13">
+                <h3 class="general_title">Speaker Test (19/03/2024):</h3>
+                <p class="tabbingLVL2">
+                    We are going to use speakers from a Magalhães Laptop for our prototype.
+                    <a href="https://pt.wikipedia.org/wiki/Portátil_Magalhães" target="_self">
+                        Magalhães Laptops
+                    </a>
+                    were Laptops created for Educational Use in 2008.
+                    One of the members of the group had an half-broken Magalhães Laptop
+                    and decided to use the speakers for the project.<br>
+                    We tested them out with an Arduino Uno to made sure they worked
+                    and here's the result:<br><br>
+                    <video class="center format_video_v" width="75%" height="auto" controls>
+                        <source src="Video/Speaker_Test.mov" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </p>
+                <br>
+            </div>
+
+            <div id="Update_12">
+                <h3 class="general_title">Controller PCB in Development (17/03/2024):</h3>
+                <p class="tabbingLVL2">
+                    Started development of the PCB for the controller.
+                    We chose Ki-Cad to develop the PCB because of its free-of-use,
+                    constant updates and broad documentation,
+                    making it a great tool to learn for the future.<br>
+
+                    We started by making a symbol for the joysticks (which was previously non existant):<br><br>
+                    <img src="Images/Joystick_Symbol.webp" class="center fotos_v" alt="Desenho Symbol dos Joysticks"></img><br>
+
+                    Then we made the schematic of the circuit
+                    that will be put into the PCB. We ended up with something like the following:<br><br>
+                    <img src="Images/Circuit_PCB_Schematic.webp" class="center fotos_h" alt="Desenho Schematic do Circuito da PCB"></img><br>
+                    
+                    After that, to make the PCB layout itself we first had to make a schematic for the PCB,
+                    to do that we first needed a footprint for the joysticks
+                    (which is a drawing of how a device should look on the PCB layout).<br><br>
+                    <img src="Images/Joystick_Footprint.webp" class="center fotos_v" alt="Footprint dos Joysticks"></img><br>
+
+                    And so we made the PCB layout:<br><br>
+                    <img src="Images/PCB_Layout.webp" class="center fotos_h" alt="Layout da PCB"></img><br>
+
+                    The rest of the PCB will be made in the future
+                    and adjustments may be made on the parts shown above.<br>
+                    <strong>
+                        Note: We're still not sure if an Arduino will be used
+                        for the controller or the FPGA itself.
+                        We'll keep the blog updated about it!
+                    </strong>
+                </p>
+                <br>
+            </div>
+
             <div id="Update_11">
                 <h3 class="general_title">Arduino detecting most controls (07/03/2024):</h3>
                 <p class="tabbingLVL2">
